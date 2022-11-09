@@ -23,23 +23,6 @@
   color: white;
   /* border-bottom: 1px solid white; */
 }
-#content-holder .left-side ul li span{
-  width: 0px;
-  display: block;
-  height: 2px;
-  background-color: transparent;
-  position: absolute;
-  left: 50%;
-  bottom: 0px;
-  transition: 0.6s ease;
-}
-
-#content-holder .left-side ul li:hover span{
-  background-color: white;
-  width: 100%;
-  left: 0px;
-}
-
 
 
 #content-holder .right-side button{
@@ -65,3 +48,72 @@ ul{
   margin: 0px;
   list-style-type: none;
 }
+
+
+/* span */
+
+#content-holder .left-side ul li::before,#content-holder .left-side ul li::after{
+  content: '';
+  width: 0px;
+  display: block;
+  height: 2px;
+  position: absolute;
+  left: 50%;
+  transition: 0.6s ease;
+  background-color: transparent;
+}
+
+
+#content-holder .left-side ul li::after{
+  bottom: 0px;
+}
+
+#content-holder .left-side ul li:hover::after{
+  background-color: white;
+  width: 100%;
+  left: 0px;
+}
+
+#content-holder .left-side ul li::before{
+  top: 0px;
+}
+
+#content-holder .left-side ul li:hover::before{
+  background-color: blue;
+  width: 100%;
+  left: 0px;
+} 
+
+
+/* 
+#content-holder .left-side ul li span{
+  width: 0px;
+  display: block;
+  height: 2px;
+  position: absolute;
+  left: 50%;
+  transition: 0.6s ease;
+  background-color: transparent;
+}
+
+#content-holder .left-side ul li span.bottom{
+  bottom: 0px;
+}
+
+#content-holder .left-side ul li:hover span.bottom{
+  background-color: white;
+  width: 100%;
+  left: 0px;
+}
+
+#content-holder .left-side ul li span.top{
+  top: 0px;
+}
+
+#content-holder .left-side ul li:hover span.top{
+  background-color: blue;
+  width: 100%;
+  left: 0px;
+} 
+
+*/
