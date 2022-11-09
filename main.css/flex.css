@@ -1,0 +1,67 @@
+#content-holder{
+  display: flex;
+  padding: 50px;
+  justify-content: space-between;
+  align-items: center;
+  height: 100px;
+  background-color: red;
+}
+
+
+#content-holder .left-side ul{
+  display: flex;
+}
+
+#content-holder .left-side ul li{
+  padding: 40px;
+  cursor: pointer;
+  font-size: 20px;
+  transition: 0.6s ease;
+  position: relative;
+}
+#content-holder .left-side ul li:hover{
+  color: white;
+  /* border-bottom: 1px solid white; */
+}
+#content-holder .left-side ul li span{
+  width: 0px;
+  display: block;
+  height: 2px;
+  background-color: transparent;
+  position: absolute;
+  left: 50%;
+  bottom: 0px;
+  transition: 0.6s ease;
+}
+
+#content-holder .left-side ul li:hover span{
+  background-color: white;
+  width: 100%;
+  left: 0px;
+}
+
+
+
+#content-holder .right-side button{
+ width: 200px;
+ height: 50px;
+ cursor: pointer;
+ background-color: transparent;
+ color: white;
+ border-color: white;
+ border-width: 2px;
+ border-style: solid;
+ border-radius: 10px;
+ transition: 0.5s ease;
+}
+
+#content-holder .right-side button:hover{
+  background-color: black;
+  border-color: black;
+}
+
+
+ul{
+  margin: 0px;
+  list-style-type: none;
+}
